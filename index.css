@@ -15,20 +15,29 @@ img.Logo{
 
 body{
     font-family: 'Inter', sans-serif;
-    font-size: 16px;   /* tamaño base cómodo en móvil */
+    font-size: 16px;
     line-height: 1.5;
 
     background-color: black;
 }
 
 main{
-    background-color: #E0DDFF;
+    background-color: #dfdfdf;
 
     margin-top: 20px;
     padding: 20px 20px;
     border-radius: 22px;
+
+    text-align: center;
 }
 
 h1.Welcome{
-    text-align: center;
+    color: #003C66;
+    font-weight: bold;
 }
+
+h3.QueApetece{
+    color: #006BB8;
+    font-weight: 300;
+}
+

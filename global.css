@@ -1,0 +1,26 @@
+header{
+    background-color: #003C66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 30px;
+    border-radius: 22px 22px 0px 0px;
+}
+
+img.Logo{
+    max-width: 200px;
+    height: auto;
+}
+
+/*
+nav{}
+*/
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+
+    background-color: black;
+}

@@ -3,6 +3,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+
     padding: 20px 20px;
     border-radius: 22px;
 }
@@ -10,4 +11,24 @@ header{
 img.Logo{
     max-width: 200px;
     height: auto;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;   /* tamaño base cómodo en móvil */
+    line-height: 1.5;
+
+    background-color: black;
+}
+
+main{
+    background-color: #E0DDFF;
+
+    margin-top: 20px;
+    padding: 20px 20px;
+    border-radius: 22px;
+}
+
+h1.Welcome{
+    text-align: center;
 }

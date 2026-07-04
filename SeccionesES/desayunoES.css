@@ -1,5 +1,6 @@
 div.TipoPan{
     border-left: 3px solid #FF6F00;
+    margin-top: 30px;
     margin-left: 15px;
     padding: 0px 0px 0px 15px;
     margin-bottom: 25px;
@@ -31,26 +32,26 @@ div.TipoLeche p{
     text-align: right;
 }
 
-.MenuTostada {
+section{
     margin-top: 50px;
     max-width: 100%;
 }
- 
-.plegable {
+
+.Plegable{
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
 }
- 
+
 /* Barra de título: abre y cierra toda la lista */
-.plegable__titulo {
+.TittlePlegable{
     background-color: #00CA7D;
     color: #fff;
     font-size: 1.15rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 0.9rem 1rem;
+    padding: 5px 20px 5px 40px;
     cursor: pointer;
     list-style: none; /* quita la flecha por defecto en algunos navegadores */
     display: flex;
@@ -58,25 +59,25 @@ div.TipoLeche p{
     align-items: center;
     -webkit-tap-highlight-color: transparent;
 }
- 
+
 /* Quita la flecha por defecto en WebKit */
-.plegable__titulo::-webkit-details-marker {
+.TittlePlegable::-webkit-details-marker{
     display: none;
 }
- 
+
 /* Flecha propia que gira al abrir */
-.plegable__titulo::after {
+.TittlePlegable::after{
     content: "▾";
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     transition: transform 0.25s ease;
 }
- 
-.plegable[open] .plegable__titulo::after {
+
+.Plegable[open] .TittlePlegable::after{
     transform: rotate(180deg);
 }
- 
+
 /* Nota del suplemento */
-.plegable__nota {
+.Nota{
     background-color: #FF6F00;
     margin-top: 0px;
     text-align: center;
@@ -85,63 +86,58 @@ div.TipoLeche p{
     color: black;
     padding: 15px 0px 15px 10px;
 }
- 
+
 /* --------- Lista de tostadas --------- */
- 
-.plegable__lista {
+
+.ListaPlegada{
     margin-left: -40px;
     list-style: none;
     background-color: #a14f4f00;
 }
- 
-.tostada {
+
+.Item{
     background-color: #fff;
     padding: 18px 20px 5px 20px;
     margin-top: 5px;
     margin-bottom: 5px;
     border-radius: 22px;
 }
- 
-.tostada:last-child {
+
+.ItemInfo{
     border-bottom: none;
 }
- 
+
 /* Nombre a la izquierda, precio a la derecha */
-.tostada__cabecera {
+.ItemNombre{
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     gap: 0.75rem;
 }
- 
-.tostada__nombre{
+
+.ItemNombre{
     font-weight: 700;
     color: #003C66;
-}
-.tostada__precio {
-    font-weight: 700;
-    color: #FF6F00;
-}
- 
-.tostada__nombre {
     font-size: 1rem;
 }
- 
-.tostada__precio {
+.ItemPrecio{
+    font-weight: 700;
+    color: #FF6F00;
     font-size: 1rem;
     white-space: nowrap;
 }
- 
+
+
 /* Descripción sutil bajo el nombre */
-.tostada__descripcion {
+.ItemDescripcion{
     font-size: 0.82rem;
     color: #8a8a8a;
     margin-top: 0.2rem;
     line-height: 1.35;
 }
- 
+
 /* --------- Pantallas más grandes (progresivo) --------- */
- 
+
 @media (min-width: 600px) {
     .menu-seccion {
         max-width: 560px;

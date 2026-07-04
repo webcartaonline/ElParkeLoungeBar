@@ -1,0 +1,12 @@
+header{
+    background-color: #003C66;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+img.Logo{
+    max-width: 150px;
+    height: auto;
+}

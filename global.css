@@ -27,30 +27,35 @@ img.Logo{
 
 
 .navbar {
-    background-color: #1565c0; /* azul como el de la imagen */
+    background-color: #1565c0;
+    border-radius: 0px 0px 22px 22px;
     padding: 0.5rem 0;
-    margin: 10px 10px 0px 10px;
+    margin: 0px 10px 0px 10px;
 }
 
 .menu {
     display: flex;
+    margin: 0;
+    padding: 0;
+
     justify-content: space-between;
     align-items: center;
     list-style: none;
-    margin: 0;
-    padding: 0;
-    /* si algún día añades más secciones y no caben,
-       esto permite deslizar con el dedo */
+
     overflow-x: auto;
+    /* si algún día añades más secciones y no caben, esto permite deslizar con el dedo */
 }
 
 .tab {
     position: relative;
+    padding: 0.9rem 0.5rem 0.6rem;
+
     display: block;
-    color: #cfe3f7;              /* tono más apagado para las inactivas */
+
+    color: #cfe3f7; /* tono más apagado para las inactivas */
     text-decoration: none;
     font-size: 1rem;
-    padding: 0.9rem 0.5rem 0.6rem;
+
     white-space: nowrap;
     transition: font-size 0.2s, color 0.2s;
 }
@@ -58,8 +63,10 @@ img.Logo{
 /* La sección activa: negrita, un poco más grande y color blanco */
 .tab.activo {
     color: #fff;
-    font-weight: bold;
+
     font-size: 1.1rem;
+
+    font-weight: bold;
 }
 
 /* La rayita blanca redondeada encima de la pestaña activa */
@@ -78,11 +85,14 @@ img.Logo{
 
 main{
     background-color: #dfdfdf;
-    margin-top: 10px;
     padding: 20px 20px;
+    margin-top: 10px;
     border-radius: 22px;
 }
 
 footer{
-    background-color: #2c2c2c;
+    background-color: #3d3d3d;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 22px;
 }

@@ -31,7 +31,7 @@ main{
 
 h1.Welcome{
     color: #003C66;
-    font-weight: bold;
+    font-weight: 900;
 
     text-align: center;
 }
@@ -46,12 +46,25 @@ h3.QueApetece{
 div{
     background-color: #00CA7D;
     border-radius: 20px;
+    border: none;
 
     display: flex;
     align-items: center;
     flex-direction: column;
 
     margin: 50px 0px 50px 0px;
+}
+
+img{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+img.SeccionComida{
+    border-radius: 0px 0px 0px 0px;
+    max-width: 100%;
+    height: auto;
 }
 
 p{

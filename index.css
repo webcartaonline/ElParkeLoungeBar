@@ -28,3 +28,47 @@ main{
     padding: 20px 20px;
     border-radius: 22px;
 }
+
+h1.Welcome{
+    color: #003C66;
+    font-weight: bold;
+
+    text-align: center;
+}
+
+h3.QueApetece{
+    color: #006BB8;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+div{
+    background-color: #00CA7D;
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 50px 0px 50px 0px;
+}
+
+p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+p.AlertaInicio{
+    background-color: #FF6F00;
+    color: black;
+    font-weight: 500;
+    border-radius: 20px 20px 0px 0px;
+
+    text-align: center;
+    margin: 0px -16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}

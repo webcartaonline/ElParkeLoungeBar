@@ -43,7 +43,7 @@ h3.QueApetece{
     text-align: center;
 }
 
-div{
+/*div{
     background-color: #00CA7D;
     border-radius: 20px;
     border: none;
@@ -53,6 +53,21 @@ div{
     flex-direction: column;
 
     margin: 50px 0px 50px 0px;
+}*/
+
+a{
+    background-color: #00CA7D;
+    border-radius: 20px;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin: 50px 0px 50px 0px;
+
+    text-decoration: none;
+    color: inherit;
 }
 
 img{

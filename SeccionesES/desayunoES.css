@@ -77,24 +77,29 @@ div.TipoLeche p{
  
 /* Nota del suplemento */
 .plegable__nota {
-    background-color: #fff;
+    background-color: #FF6F00;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 0px 0px 20px 20px;
     font-size: 0.8rem;
-    font-style: italic;
-    color: #777;
-    padding: 0.6rem 1rem 0;
+    color: black;
+    padding: 15px 0px 15px 10px;
 }
  
 /* --------- Lista de tostadas --------- */
  
 .plegable__lista {
+    margin-left: -40px;
     list-style: none;
-    background-color: #fff;
+    background-color: #a14f4f00;
 }
  
 .tostada {
     background-color: #fff;
-    padding: 0.85rem 1rem;
-    border-bottom: 1px solid #eee;
+    padding: 18px 20px 5px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border-radius: 22px;
 }
  
 .tostada:last-child {
@@ -109,7 +114,10 @@ div.TipoLeche p{
     gap: 0.75rem;
 }
  
-.tostada__nombre,
+.tostada__nombre{
+    font-weight: 700;
+    color: #003C66;
+}
 .tostada__precio {
     font-weight: 700;
     color: #FF6F00;

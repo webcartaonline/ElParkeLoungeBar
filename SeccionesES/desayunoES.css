@@ -1,0 +1,32 @@
+div.TipoPan{
+    border-left: 3px solid #FF6F00;
+    margin-left: 15px;
+    padding: 0px 0px 0px 15px;
+    margin-bottom: 25px;
+}
+
+div.TipoPan h3{
+    color: #FF6F00;
+}
+
+div.TipoPan p{
+    margin-top: -15px;
+}
+
+div.TipoLeche{
+    border-right: 3px solid #FF6F00;
+    margin-right: 15px;
+    padding: 0px 15px 0px 0px;
+}
+
+div.TipoLeche h3{
+    color: #FF6F00;
+
+    text-align: right;
+}
+
+div.TipoLeche p{
+    margin-top: -15px;
+
+    text-align: right;
+}

@@ -20,127 +20,14 @@ div.TipoLeche{
     padding: 0px 15px 0px 0px;
 }
 
-div.TipoLeche h3{
+.TipoLeche h3{
     color: #FF6F00;
 
     text-align: right;
 }
 
-div.TipoLeche p{
+.TipoLeche p{
     margin-top: -15px;
 
     text-align: right;
-}
-
-section{
-    margin-top: 50px;
-    max-width: 100%;
-}
-
-.Plegable{
-    border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
-}
-
-/* Barra de título: abre y cierra toda la lista */
-.TittlePlegable{
-    background-color: #00CA7D;
-    color: #fff;
-    font-size: 1.15rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 5px 20px 5px 40px;
-    cursor: pointer;
-    list-style: none; /* quita la flecha por defecto en algunos navegadores */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-tap-highlight-color: transparent;
-}
-
-/* Quita la flecha por defecto en WebKit */
-.TittlePlegable::-webkit-details-marker{
-    display: none;
-}
-
-/* Flecha propia que gira al abrir */
-.TittlePlegable::after{
-    content: "▾";
-    font-size: 1.8rem;
-    transition: transform 0.25s ease;
-}
-
-.Plegable[open] .TittlePlegable::after{
-    transform: rotate(180deg);
-}
-
-/* Nota del suplemento */
-.Nota{
-    background-color: #FF6F00;
-    margin-top: 0px;
-    text-align: center;
-    border-radius: 0px 0px 20px 20px;
-    font-size: 0.8rem;
-    color: black;
-    padding: 15px 0px 15px 10px;
-}
-
-/* --------- Lista de tostadas --------- */
-
-.ListaPlegada{
-    margin-left: -40px;
-    list-style: none;
-    background-color: #a14f4f00;
-}
-
-.Item{
-    background-color: #fff;
-    padding: 18px 20px 5px 20px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-    border-radius: 22px;
-}
-
-.ItemInfo{
-    border-bottom: none;
-}
-
-/* Nombre a la izquierda, precio a la derecha */
-.ItemNombre{
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    gap: 0.75rem;
-}
-
-.ItemNombre{
-    font-weight: 700;
-    color: #003C66;
-    font-size: 1rem;
-}
-.ItemPrecio{
-    font-weight: 700;
-    color: #FF6F00;
-    font-size: 1rem;
-    white-space: nowrap;
-}
-
-
-/* Descripción sutil bajo el nombre */
-.ItemDescripcion{
-    font-size: 0.82rem;
-    color: #8a8a8a;
-    margin-top: 0.2rem;
-    line-height: 1.35;
-}
-
-/* --------- Pantallas más grandes (progresivo) --------- */
-
-@media (min-width: 600px) {
-    .menu-seccion {
-        max-width: 560px;
-        margin: 0 auto;
-    }
 }

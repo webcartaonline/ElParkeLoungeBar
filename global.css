@@ -175,7 +175,17 @@ section{
     text-align: center;
     border-radius: 0px 0px 22px 22px;
     font-size: 0.8rem;
-    color: black;
+    color: white;
+    padding: 15px 0px 15px 10px;
+}
+
+.Nota2{
+    background-color: #FF6F00;
+    margin-top: 0px;
+    text-align: center;
+    border-radius: 22px;
+    font-size: 0.8rem;
+    color: white;
     padding: 15px 0px 15px 10px;
 }
 

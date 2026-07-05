@@ -1,4 +1,4 @@
-div.TipoPan{
+div.AvisoIzquierda{
     border-left: 3px solid #FF6F00;
     margin-top: 30px;
     margin-left: 15px;
@@ -6,61 +6,28 @@ div.TipoPan{
     margin-bottom: 25px;
 }
 
-div.TipoPan h3{
+div.AvisoIzquierda h3{
     color: #FF6F00;
 }
 
-div.TipoPan p{
+div.AvisoIzquierda p{
     margin-top: -15px;
 }
 
-div.TipoLeche{
+div.AvisoDerecha{
     border-right: 3px solid #FF6F00;
     margin-right: 15px;
     padding: 0px 15px 0px 0px;
 }
 
-.TipoLeche h3{
+.AvisoDerecha h3{
     color: #FF6F00;
 
     text-align: right;
 }
 
-.TipoLeche p{
+.AvisoDerecha p{
     margin-top: -15px;
 
     text-align: right;
-}
-
-.TituloPlegableBebidas{
-    background-color: #00CA7D;
-    color: #fff;
-    border-radius: 22px;
-    font-size: 1.15rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    padding: 5px 20px 5px 40px;
-    cursor: pointer;
-    list-style: none; /* quita la flecha por defecto en algunos navegadores */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    -webkit-tap-highlight-color: transparent;
-}
-
-/* Quita la flecha por defecto en WebKit */
-.TituloPlegableBebidas::-webkit-details-marker{
-    display: none;
-}
-
-/* Flecha propia que gira al abrir */
-.TituloPlegableBebidas::after{
-    content: "▾";
-    font-size: 1.8rem;
-    transition: transform 0.25s ease;
-}
-
-.Plegable[open] .TituloPlegableBebidas::after{
-    transform: rotate(180deg);
 }

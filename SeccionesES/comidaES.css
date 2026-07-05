@@ -1,4 +1,4 @@
-div.TipoPan{
+div.AvisoIzquierda{
     border-left: 3px solid #FF6F00;
     margin-top: 30px;
     margin-left: 15px;
@@ -6,27 +6,27 @@ div.TipoPan{
     margin-bottom: 25px;
 }
 
-div.TipoPan h3{
+div.AvisoIzquierda h3{
     color: #FF6F00;
 }
 
-div.TipoPan p{
+div.AvisoIzquierda p{
     margin-top: -15px;
 }
 
-div.TipoLeche{
+div.AvisoDerecha{
     border-right: 3px solid #FF6F00;
     margin-right: 15px;
     padding: 0px 15px 0px 0px;
 }
 
-.TipoLeche h3{
+.AvisoDerecha h3{
     color: #FF6F00;
 
     text-align: right;
 }
 
-.TipoLeche p{
+.AvisoDerecha p{
     margin-top: -15px;
 
     text-align: right;

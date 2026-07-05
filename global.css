@@ -29,14 +29,14 @@ img.Logo{
 .navbar {
     background-color: #1565c0;
     border-radius: 0px 0px 22px 22px;
-    padding: 0.5rem 0;
+    padding: 0px 0px 0px 0px;
     margin: 0px 10px 0px 10px;
 }
 
 .menu {
     display: flex;
     margin: 0;
-    padding: 0;
+    padding: 0px 15px 0px 15px;
 
     justify-content: space-between;
     align-items: center;

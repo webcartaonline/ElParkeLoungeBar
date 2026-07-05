@@ -116,6 +116,11 @@ div.PortadaSeccion{
     width: 90%; /* que no toque los bordes en pantallas pequeñas */
 }
 
+hr.VacioPequeño{
+    border: none;
+    height: 10px;
+}
+
 /*MENU PLEGABLE*/
 
 section{

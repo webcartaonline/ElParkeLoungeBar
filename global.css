@@ -96,7 +96,7 @@ div.PortadaSeccion{
     width: 100%;
 }
 
-.PortadaSeccion img{
+img.ImagenPortada{
     border-radius: 22px;
     width: 100%;
     height: 120px; /* altura pensada para móvil */

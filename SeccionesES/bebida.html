@@ -251,5 +251,23 @@
 
     </main>
 
+    <script>
+            const Tabs = document.querySelectorAll('.Tab');
+
+            Tabs.forEach(Tab => {
+                Tab.addEventListener('click', () => {
+                    Tabs.forEach(T => T.classList.remove('Activo'));
+                        Tab.classList.add('Activo');
+
+            // Desliza el menú para que la pestaña pulsada quede centrada
+                        Tab.scrollIntoView({
+                            behavior: 'smooth',   // animación suave
+                            inline: 'center',     // centrada horizontalmente
+                            block: 'nearest'      // no mueve la página verticalmente
+                        });
+                });
+            });
+    </script>
+
 </body>
 </html>

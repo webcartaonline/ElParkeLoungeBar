@@ -47,7 +47,7 @@ img.Logo{
     /* si algún día añades más secciones y no caben, esto permite deslizar con el dedo */
 }
 
-.tab {
+.Tab{
     position: relative;
     padding: 0.9rem 0.5rem 0.6rem;
 
@@ -62,7 +62,7 @@ img.Logo{
 }
 
 /* La sección activa: negrita, un poco más grande y color blanco */
-.tab.activo {
+.Tab.Activo{
     color: #fff;
 
     font-size: 1.1rem;
@@ -71,7 +71,7 @@ img.Logo{
 }
 
 /* La rayita blanca redondeada encima de la pestaña activa */
-.tab.activo::before {
+.Tab.Activo::before{
     content: "";
     position: absolute;
     top: 0;
@@ -137,7 +137,7 @@ section{
 }
 
 /* Barra de título: abre y cierra toda la lista */
-.TittlePlegable{
+.TituloPlegable{
     background-color: #00CA7D;
     color: #fff;
     font-size: 1.15rem;
@@ -154,18 +154,18 @@ section{
 }
 
 /* Quita la flecha por defecto en WebKit */
-.TittlePlegable::-webkit-details-marker{
+.TituloPlegable::-webkit-details-marker{
     display: none;
 }
 
 /* Flecha propia que gira al abrir */
-.TittlePlegable::after{
+.TituloPlegable::after{
     content: "▾";
     font-size: 1.8rem;
     transition: transform 0.25s ease;
 }
 
-.Plegable[open] .TittlePlegable::after{
+.Plegable[open] .TituloPlegable::after{
     transform: rotate(180deg);
 }
 

@@ -22,11 +22,11 @@
 
     <nav class="navbar">
         <ul class="menu">
-            <li><a href="desayunoES.html" class="tab">Desayunos</a></li>
-            <li><a href="comidaES.html" class="tab">Comidas</a></li>
-            <li><a href="tapeoES.html" class="tab">Tapeo</a></li>
-            <li><a href="dulceES.html" class="tab">Dulces</a></li>
-            <li><a href="#bebidas" class="tab activo">Bebidas</a></li>
+            <li><a href="desayunoES.html" class="Tab">Desayunos</a></li>
+            <li><a href="comidaES.html" class="Tab">Comidas</a></li>
+            <li><a href="tapeoES.html" class="Tab">Tapeo</a></li>
+            <li><a href="dulceES.html" class="Tab">Dulces</a></li>
+            <li><a href="#bebidas" class="Tab Activo">Bebidas</a></li>
         </ul>
     </nav>
         
@@ -40,7 +40,12 @@
 
         <section class="MenuZumos">
         <details class="Plegable">
+<<<<<<< HEAD
             <summary class="TittlePlegable">Zumos</summary>
+=======
+            <summary class="TituloPlegable">Zumos</summary>
+
+>>>>>>> c2bc6b1197b57fae6f2da6ffa7bb4e72f89bd74c
             <p class="Nota">ZUMO DE NARANJA SOLO DISPONIBLE EN LA MAÑANA</p>
 
             <ul class="ListaPlegada">
@@ -94,7 +99,7 @@
 
         <section class="MenuCerveza">
         <details class="Plegable">
-            <summary class="TittlePlegable">CERVEZAS</summary>
+            <summary class="TituloPlegable">CERVEZAS</summary>
 
             <p class="NotaAzul">TERCIOS</p>
 
@@ -321,6 +326,29 @@
         </section>
 
     </main>
+
+<script>
+    const Tabs = document.querySelectorAll('.Tab');
+
+    Tabs.forEach(Tab => {
+        Tab.addEventListener('click', () => {
+            Tabs.forEach(T => T.classList.remove('Activo'));
+            Tab.classList.add('Activo');
+
+            // Desliza el menú para que la pestaña pulsada quede centrada
+            Tab.scrollIntoView({
+                behavior: 'smooth',   // animación suave
+                inline: 'center',     // centrada horizontalmente
+                block: 'nearest'      // no mueve la página verticalmente
+            });
+        });
+    });
+    
+    const TabActivo = document.querySelector('.Tab.Activo');
+if (TabActivo) {
+    TabActivo.scrollIntoView({ inline: 'center', block: 'nearest' });
+}
+</script>
 
 </body>
 </html>

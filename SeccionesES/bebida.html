@@ -86,22 +86,62 @@
 
         <section class="MenuCerveza">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">Cerveza</summary>
+            <summary class="TittlePlegable">CERVEZAS</summary>
+
+            <p class="NotaAzul">TERCIOS</p>
 
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Zumo de naranja</span>
+                        <span class="ItemNombre">Aguila dorada</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de naranja recien exprimido</p>
+                    <p class="ItemDescripcion"></p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Melocotón o piña</span>
+                        <span class="ItemNombre">Aguila sin filtrar</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Estrella de levante</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Hay sin alcohol</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Alcazar</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Cruzcampo</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Cerveza sin gluten</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">La negra</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+
+                <p class="Nota2">QUINTOS</p>
+
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Aguila dorada</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
                 </li>
             </ul>
         </details>
@@ -125,6 +165,36 @@
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
                     <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                </li>
+            </ul>
+        </details>
+        </section>
+
+        <section class="MenuInfusiones">
+        <details class="Plegable">
+            <summary class="TituloPlegableSinNota">INFUSIONES</summary>
+
+            <ul class="ListaPlegada">
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Manzanilla</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Te verde</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Te Rojo</span>
+                        <span class="ItemPrecio">0,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
                 </li>
             </ul>
         </details>
@@ -233,41 +303,16 @@
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Zumo de naranja</span>
+                        <span class="ItemNombre">Colacao</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de naranja recien exprimido</p>
-                </li>
-                <li class="Item">
-                    <div class="ItemInfo">
-                        <span class="ItemNombre">Melocotón o piña</span>
-                        <span class="ItemPrecio">0,00 €</span>
-                    </div>
-                    <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                    <p class="ItemDescripcion">Colacao con leche</p>
                 </li>
             </ul>
         </details>
         </section>
 
     </main>
-
-    <script>
-            const Tabs = document.querySelectorAll('.Tab');
-
-            Tabs.forEach(Tab => {
-                Tab.addEventListener('click', () => {
-                    Tabs.forEach(T => T.classList.remove('Activo'));
-                        Tab.classList.add('Activo');
-
-            // Desliza el menú para que la pestaña pulsada quede centrada
-                        Tab.scrollIntoView({
-                            behavior: 'smooth',   // animación suave
-                            inline: 'center',     // centrada horizontalmente
-                            block: 'nearest'      // no mueve la página verticalmente
-                        });
-                });
-            });
-    </script>
 
 </body>
 </html>

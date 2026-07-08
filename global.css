@@ -316,7 +316,7 @@ div.Alergenos{
 
 .ListaAlergenos{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     list-style: none;

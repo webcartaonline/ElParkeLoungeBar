@@ -137,7 +137,7 @@ section{
 }
 
 /* Barra de título: abre y cierra toda la lista */
-.TittlePlegable{
+.TituloPlegable{
     background-color: #00CA7D;
     color: #fff;
     font-size: 1.15rem;
@@ -154,18 +154,18 @@ section{
 }
 
 /* Quita la flecha por defecto en WebKit */
-.TittlePlegable::-webkit-details-marker{
+.TituloPlegable::-webkit-details-marker{
     display: none;
 }
 
 /* Flecha propia que gira al abrir */
-.TittlePlegable::after{
+.TituloPlegable::after{
     content: "▾";
     font-size: 1.8rem;
     transition: transform 0.25s ease;
 }
 
-.Plegable[open] .TittlePlegable::after{
+.Plegable[open] .TituloPlegable::after{
     transform: rotate(180deg);
 }
 

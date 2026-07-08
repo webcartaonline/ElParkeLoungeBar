@@ -314,10 +314,10 @@ div.Alergenos{
     text-align: center;
 }
 
-.Alergenos article{
+.ListaAlergenos{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
+    gap: 20px;
     list-style: none;
 }

@@ -47,7 +47,7 @@ img.Logo{
     /* si algún día añades más secciones y no caben, esto permite deslizar con el dedo */
 }
 
-.tab {
+.Tab{
     position: relative;
     padding: 0.9rem 0.5rem 0.6rem;
 
@@ -62,7 +62,7 @@ img.Logo{
 }
 
 /* La sección activa: negrita, un poco más grande y color blanco */
-.tab.activo {
+.Tab.Activo{
     color: #fff;
 
     font-size: 1.1rem;
@@ -71,7 +71,7 @@ img.Logo{
 }
 
 /* La rayita blanca redondeada encima de la pestaña activa */
-.tab.activo::before {
+.Tab.Activo::before{
     content: "";
     position: absolute;
     top: 0;

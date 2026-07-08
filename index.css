@@ -12,9 +12,9 @@ body{
 
 header{
     background-color: #003C66;
-    margin: 10px;
+    margin: 0px; /*10px*/
     padding: 30px;
-    border-radius: 22px;
+    border-radius: 0px 0px 22px 22px; /*22px*/
 
     display: flex;
     justify-content: space-between;

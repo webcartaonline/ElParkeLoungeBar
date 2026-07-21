@@ -8,7 +8,6 @@
     <title>El Parke Lounge Bar</title>
     <link rel="stylesheet" href="index.css">
 
-    <title>El Parke Lounge Bar</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
@@ -18,9 +17,15 @@
     <header>
         <img class="Logo" src="Recursos/Logo/IsoLogoWhiteBackgroundBlue.png" alt="Logotipo del comercio llamado El Parque lounch bar que se compone de un arbol y el nombre del local">
 
-        <img class="IconoIdioma" src="Recursos/Icons/LenguageBotton.png" alt="Icono para cambiar el idioma">
+        <div class="SelectorIdioma">
+            <img class="IconoIdioma" src="Recursos/Icons/LenguageBotton.png" alt="Icono para cambiar el idioma">
+            <select class="MenuIdioma" aria-label="Seleccionar idioma">
+                <option value="ES" selected>Español</option>
+                <option value="EN">English</option>
+            </select>
+        </div>
     </header>
-    
+
     <main>
         <h1 class="Welcome">¡ BIENVENIDO !</h1>
         <h3 class="QueApetece">¿Que te apetece hoy?</h3>
@@ -46,11 +51,13 @@
             <p>Algo dulce</p>
         </a>
 
-        <a href="SeccionesES/bebida.html" class="ButtonDulceInicio">
+        <a href="SeccionesES/bebidasES.html" class="ButtonDulceInicio">
             <img class="SeccionBebida" src="Recursos/Bebidas/PortadaBebidas.png" alt="Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen una botella de agua y una botella de vino">
             <p>Bebidas</p>
         </a>
 
     </main>
+
+<script src="idiomas.js"></script>
 </body>
 </html>

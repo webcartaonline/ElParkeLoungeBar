@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#003C66" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#003C66" media="(prefers-color-scheme: dark)">
-    <title>El Parke Lounge Bar - Bebidas</title>
-    <link rel="stylesheet" href="bebida.css">
+    <title>El Parke Lounge Bar - Drinks</title>
+    <link rel="stylesheet" href="bebidasEN.css">
     <link rel="stylesheet" href="../global.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,51 +16,57 @@
 
 <body>
     <header>
-        <a href="../index.html">
-            <img  class="Logo" src="../Recursos/Logo/IsoLogoWhiteBackgroundBlue.png" alt="Logotipo del comercio llamado El Parque lounch bar que se compone de un arbol y el nombre del local">
+        <a href="../indexEN.html">
+            <img  class="Logo" src="../Recursos/Logo/IsoLogoWhiteBackgroundBlue.png" alt="Logo of El Parke Lounge Bar, made up of a tree and the name of the venue">
         </a>
 
-        <img class="IconoIdioma" src="../Recursos/Icons/LenguageBotton.png" alt="Icono para cambiar el idioma">
+        <div class="SelectorIdioma">
+            <img class="IconoIdioma" src="../Recursos/Icons/LenguageBotton.png" alt="Icon to change the language">
+            <select class="MenuIdioma" aria-label="Select language">
+                <option value="ES">Español</option>
+                <option value="EN" selected>English</option>
+            </select>
+        </div>
     </header>
 
     <nav class="navbar">
         <ul class="menu">
-            <li><a href="desayunoES.html" class="Tab">Desayunos</a></li>
-            <li><a href="comidaES.html" class="Tab">Comidas</a></li>
-            <li><a href="tapeoES.html" class="Tab">Tapeo</a></li>
-            <li><a href="dulceES.html" class="Tab">Dulces</a></li>
-            <li><a href="#bebidas" class="Tab Activo">Bebidas</a></li>
+            <li><a href="desayunoEN.html" class="Tab">Breakfast</a></li>
+            <li><a href="comidaEN.html" class="Tab">Meals</a></li>
+            <li><a href="tapeoEN.html" class="Tab">Tapas</a></li>
+            <li><a href="dulceEN.html" class="Tab">Sweets</a></li>
+            <li><a href="#bebidas" class="Tab Activo">Drinks</a></li>
         </ul>
     </nav>
         
     <main>
         <div class="PortadaSeccion">
-            <h1>Bebidas</h1>
-            <img class="ImagenPortada" src="../Recursos/Bebidas/PortadaBebidas.png" alt="Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen una hamburguesa y un bocadillo">
+            <h1>Drinks</h1>
+            <img class="ImagenPortada" src="../Recursos/Bebidas/PortadaBebidas.png" alt="White background image with a 3D illustration showing a burger and a baguette sandwich">
         </div>
 
         <hr class="VacioPequeño">
 
         <section class="MenuZumos">
         <details class="Plegable">
-            <summary class="TituloPlegable">Zumos</summary>
+            <summary class="TituloPlegable">Juices</summary>
 
-            <p class="Nota">ZUMO DE NARANJA SOLO DISPONIBLE EN LA MAÑANA</p>
+            <p class="Nota">ORANGE JUICE ONLY AVAILABLE IN THE MORNING</p>
 
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Zumo de naranja</span>
+                        <span class="ItemNombre">Orange juice</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de naranja recien exprimido</p>
+                    <p class="ItemDescripcion">Freshly squeezed orange juice</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Melocotón o piña</span>
+                        <span class="ItemNombre">Peach or pineapple</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                    <p class="ItemDescripcion">Peach or pineapple juice with ice</p>
                 </li>
             </ul>
         </details>
@@ -68,22 +74,22 @@
 
         <section class="MenuRefrescos">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">Refrescos</summary>
+            <summary class="TituloPlegableSinNota">Soft drinks</summary>
 
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Zumo de naranja</span>
+                        <span class="ItemNombre">Orange juice</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de naranja recien exprimido</p>
+                    <p class="ItemDescripcion">Freshly squeezed orange juice</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Melocotón o piña</span>
+                        <span class="ItemNombre">Peach or pineapple</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                    <p class="ItemDescripcion">Peach or pineapple juice with ice</p>
                 </li>
             </ul>
         </details>
@@ -91,9 +97,9 @@
 
         <section class="MenuCerveza">
         <details class="Plegable">
-            <summary class="TituloPlegable">CERVEZAS</summary>
+            <summary class="TituloPlegable">BEERS</summary>
 
-            <p class="NotaAzul">TERCIOS</p>
+            <p class="NotaAzul">TERCIOS (33 CL)</p>
 
             <ul class="ListaPlegada">
                 <li class="Item">
@@ -115,7 +121,7 @@
                         <span class="ItemNombre">Heineken</span>
                         <span class="ItemPrecio">2,80 €</span>
                     </div>
-                    <p class="ItemDescripcion">Hay sin alcohol</p>
+                    <p class="ItemDescripcion">Alcohol-free version available</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
@@ -129,7 +135,7 @@
                         <span class="ItemNombre">Cruzcampo</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Cerveza sin gluten</p>
+                    <p class="ItemDescripcion">Gluten-free beer</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
@@ -143,7 +149,7 @@
                         <span class="ItemNombre">Amstel oro</span>
                         <span class="ItemPrecio">2,80 €</span>
                     </div>
-                    <p class="ItemDescripcion">Hay sin alcohol</p>
+                    <p class="ItemDescripcion">Alcohol-free version available</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
@@ -153,7 +159,7 @@
                     <p class="ItemDescripcion"></p>
                 </li>
                 
-                <p class="Nota2">QUINTOS</p>
+                <p class="Nota2">QUINTOS (20 CL)</p>
 
                 <li class="Item">
                     <div class="ItemInfo">
@@ -168,10 +174,10 @@
 
         <section class="MenuCervezaBarril">
         <details class="Plegable">
-            <summary class="TituloPlegable">DE BARRIL</summary>
+            <summary class="TituloPlegable">ON TAP</summary>
 
 
-            <p class="NotaAzul">TANQUE</p>
+            <p class="NotaAzul">TANKARD</p>
 
             <ul class="ListaPlegada">
                 <li class="Item">
@@ -186,7 +192,7 @@
                         <span class="ItemNombre">Paulaner</span>
                         <span class="ItemPrecio">3,50 €</span>
                     </div>
-                    <p class="ItemDescripcion">Pinta</p>
+                    <p class="ItemDescripcion">Pint</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
@@ -210,7 +216,7 @@
                         <span class="ItemNombre">Paulaner</span>
                         <span class="ItemPrecio">2,50 €</span>
                     </div>
-                    <p class="ItemDescripcion">Media pinta</p>
+                    <p class="ItemDescripcion">Half pint</p>
                 </li>
             </ul>
         </details>
@@ -218,22 +224,22 @@
 
         <section class="MenuVino">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">Vino y vermú</summary>
+            <summary class="TituloPlegableSinNota">Wine and vermouth</summary>
 
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Zumo de naranja</span>
+                        <span class="ItemNombre">Orange juice</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de naranja recien exprimido</p>
+                    <p class="ItemDescripcion">Freshly squeezed orange juice</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Melocotón o piña</span>
+                        <span class="ItemNombre">Peach or pineapple</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Zumo de melocotón o de piña con hielo</p>
+                    <p class="ItemDescripcion">Peach or pineapple juice with ice</p>
                 </li>
             </ul>
         </details>
@@ -241,26 +247,26 @@
 
         <section class="MenuInfusiones">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">INFUSIONES</summary>
+            <summary class="TituloPlegableSinNota">INFUSIONS</summary>
 
             <ul class="ListaPlegada">
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Manzanilla</span>
+                        <span class="ItemNombre">Chamomile</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
                     <p class="ItemDescripcion"></p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Te verde</span>
+                        <span class="ItemNombre">Green tea</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
                     <p class="ItemDescripcion"></p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Te Rojo</span>
+                        <span class="ItemNombre">Red tea</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
                     <p class="ItemDescripcion"></p>
@@ -279,7 +285,7 @@
                         <span class="ItemNombre">Tropical B5</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Kiwi, melón, mango y piña</p>
+                    <p class="ItemDescripcion">Kiwi, melon, mango and pineapple</p>
                 </li>
 
                 <li class="Item">
@@ -287,7 +293,7 @@
                         <span class="ItemNombre">Delightfull B14</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Platano, arandanos, mango y acai</p>
+                    <p class="ItemDescripcion">Banana, blueberries, mango and açaí</p>
                 </li>
 
                 <li class="Item">
@@ -295,7 +301,7 @@
                         <span class="ItemNombre">Squeeze B5</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Mango, zanahoria piña y fruta de la pasión</p>
+                    <p class="ItemDescripcion">Mango, carrot, pineapple and passion fruit</p>
                 </li>
 
                 <li class="Item">
@@ -303,7 +309,7 @@
                         <span class="ItemNombre">Green power B10</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Pepino, col rizada, piña y espinacas</p>
+                    <p class="ItemDescripcion">Cucumber, kale, pineapple and spinach</p>
                 </li>
 
                 <li class="Item">
@@ -311,7 +317,7 @@
                         <span class="ItemNombre">Blue lightning B4</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Mango, platano, piña, melocotón, coco y espirulina azul</p>
+                    <p class="ItemDescripcion">Mango, banana, pineapple, peach, coconut and blue spirulina</p>
                 </li>
 
                 <li class="Item">
@@ -319,7 +325,7 @@
                         <span class="ItemNombre">Red banana</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Fresa y platano</p>
+                    <p class="ItemDescripcion">Strawberry and banana</p>
                 </li>
 
                 <li class="Item">
@@ -327,7 +333,7 @@
                         <span class="ItemNombre">Piña colada</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Piña y coco</p>
+                    <p class="ItemDescripcion">Pineapple and coconut</p>
                 </li>
 
                 <li class="Item">
@@ -335,7 +341,7 @@
                         <span class="ItemNombre">Paradise</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Melocotón, papaya y fresa</p>
+                    <p class="ItemDescripcion">Peach, papaya and strawberry</p>
                 </li>
 
                 <li class="Item">
@@ -343,7 +349,7 @@
                         <span class="ItemNombre">Tropix MIX</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Piña, papaya y mango</p>
+                    <p class="ItemDescripcion">Pineapple, papaya and mango</p>
                 </li>
 
                 <li class="Item">
@@ -351,7 +357,7 @@
                         <span class="ItemNombre">Natural green</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Brocoli, apio, espinacas, plátano, piña y mango</p>
+                    <p class="ItemDescripcion">Broccoli, celery, spinach, banana, pineapple and mango</p>
                 </li>
 
                 <li class="Item">
@@ -359,7 +365,7 @@
                         <span class="ItemNombre">Mango Fresh</span>
                         <span class="ItemPrecio">3,90 €</span>
                     </div>
-                    <p class="ItemDescripcion">Mango y pera</p>
+                    <p class="ItemDescripcion">Mango and pear</p>
                 </li>
             </ul>
         </details>
@@ -367,7 +373,7 @@
 
         <section class="MenuOtros">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">Otros</summary>
+            <summary class="TituloPlegableSinNota">Others</summary>
 
             <ul class="ListaPlegada">
                 <li class="Item">
@@ -375,29 +381,29 @@
                         <span class="ItemNombre">Colacao</span>
                         <span class="ItemPrecio">0,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Colacao con leche</p>
+                    <p class="ItemDescripcion">Colacao with milk</p>
                 </li>
             </ul>
         </details>
         </section>
 
         <div class="Alergenos">
-            <h2>Alergenos y otros</h2>
+            <h2>Allergens and others</h2>
             <article class="ListaAlergenos">
                 
                 <p>Gluten 🌾</p>
-                <p>Crustáceos 🦐</p>
-                <p>Huevos 🥚</p>
-                <p>Pescado 🐟</p>
-                <p>Cacahuetes 🥜</p>
-                <p>Soja 🌱</p>
-                <p>Leche 🥛</p>
-                <p>Frutos de cáscara 🌰</p>
-                <p>Apio 🥬</p>
-                <p>Mostaza 🌭</p>
-                <p>Sésamo ⚪</p>
-                <p>Altramuces 🌸</p>
-                <p>Moluscos 🐚</p>
+                <p>Crustaceans 🦐</p>
+                <p>Eggs 🥚</p>
+                <p>Fish 🐟</p>
+                <p>Peanuts 🥜</p>
+                <p>Soy 🌱</p>
+                <p>Milk 🥛</p>
+                <p>Tree nuts 🌰</p>
+                <p>Celery 🥬</p>
+                <p>Mustard 🌭</p>
+                <p>Sesame ⚪</p>
+                <p>Lupins 🌸</p>
+                <p>Molluscs 🐚</p>
                 <p>Alcohol 🍷</p>                
             </article>
         </div>
@@ -426,6 +432,7 @@ if (TabActivo) {
     TabActivo.scrollIntoView({ inline: 'center', block: 'nearest' });
 }
 </script>
+<script src="../idiomas.js"></script>
 
 </body>
 </html>

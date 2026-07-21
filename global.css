@@ -25,9 +25,36 @@ img.Logo{
     height: auto;
 }
 
-img.IconoIdioma{
+/* --------- Selector de idioma --------- */
+
+/* El contenedor ocupa el hueco que antes ocupaba el icono suelto */
+div.SelectorIdioma{
+    position: relative; /* referencia para el select invisible */
     width: 8%;
+    min-width: 44px; /* área táctil mínima recomendada en móvil */
+}
+
+.SelectorIdioma img.IconoIdioma{
+    width: 100%;
     height: auto;
+    display: block;
+}
+
+/* Select transparente encima del icono: al tocar la imagen
+   se abre el menú nativo del sistema para elegir idioma */
+select.MenuIdioma{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0; /* invisible pero funcional */
+    border: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 .navbar{

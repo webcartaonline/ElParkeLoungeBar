@@ -24,7 +24,7 @@ header{
 }
 
 img.Logo{
-    max-width: 49%;
+    max-width: 48%;
     height: auto;
 }
 
@@ -38,7 +38,7 @@ div.SelectorIdioma{
 }
 
 .SelectorIdioma img.IconoIdioma{
-    width: 100%;
+    width: 50%;
     height: auto;
     display: block;
 }

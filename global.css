@@ -21,10 +21,14 @@ header{
 }
 
 img.Logo{
-    max-width: 200px;
+    max-width: 55%;
     height: auto;
 }
 
+img.IconoIdioma{
+    width: 8%;
+    height: auto;
+}
 
 .navbar{
     background-color: #1565c0;

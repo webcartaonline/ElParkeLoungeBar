@@ -78,6 +78,13 @@ select.MenuIdioma{
     /* si algún día añades más secciones y no caben, esto permite deslizar con el dedo */
 }
 
+main{
+    background-color: #dfdfdf;
+    padding: 0px 0px 5px 0px;
+    margin-top: 10px;
+    border-radius: 22px;
+}
+
 .Tab{
     position: relative;
     padding: 0.9rem 0.5rem 0.6rem;
@@ -112,13 +119,6 @@ select.MenuIdioma{
     height: 5px;
     background-color: #fff;
     border-radius: 10px;
-}
-
-main{
-    background-color: #dfdfdf;
-    padding: 0px 0px 5px 0px;
-    margin-top: 10px;
-    border-radius: 22px;
 }
 
 div.PortadaSeccion{
@@ -171,11 +171,11 @@ section{
 .TituloPlegable{
     background-color: #00CA7D;
     color: #fff;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 5px 20px 5px 40px;
+    padding: 5px 20px 5px 20px;
     cursor: pointer;
     list-style: none; /* quita la flecha por defecto en algunos navegadores */
     display: flex;
@@ -204,11 +204,11 @@ section{
     background-color: #00CA7D;
     color: #fff;
     border-radius: 22px;
-    font-size: 1.15rem;
+    font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
-    padding: 5px 20px 5px 40px;
+    padding: 5px 20px 5px 20px;
     cursor: pointer;
     list-style: none; /* quita la flecha por defecto en algunos navegadores */
     display: flex;

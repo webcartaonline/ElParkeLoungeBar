@@ -12,9 +12,9 @@ body{
 
 header{
     background-color: #003C66;
-    margin: 10px;
+    margin: 0px; /*10px*/
     padding: 30px;
-    border-radius: 22px;
+    border-radius: 0px 0px 22px 22px; /*22px*/
 
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,40 @@ header{
 }
 
 img.Logo{
-    max-width: 200px;
+    max-width: 48%;
     height: auto;
+}
+
+/* --------- Selector de idioma --------- */
+
+/* El contenedor ocupa el hueco que antes ocupaba el icono suelto */
+div.SelectorIdioma{
+    position: relative; /* referencia para el select invisible */
+    width: 8%;
+    min-width: 44px; /* área táctil mínima recomendada en móvil */
+}
+
+.SelectorIdioma img.IconoIdioma{
+    width: 50%;
+    height: auto;
+    display: block;
+}
+
+/* Select transparente encima del icono: al tocar la imagen
+   se abre el menú nativo del sistema para elegir idioma */
+select.MenuIdioma{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    opacity: 0; /* invisible pero funcional */
+    border: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    appearance: none;
 }
 
 main{
@@ -49,18 +81,6 @@ h3.QueApetece{
     text-align: center;
 }
 
-/*div{
-    background-color: #00CA7D;
-    border-radius: 20px;
-    border: none;
-
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-
-    margin: 50px 0px 50px 0px;
-}*/
-
 a{
     background-color: #00CA7D;
     border-radius: 20px;
@@ -83,6 +103,12 @@ img{
 
 img.SeccionComida{
     border-radius: 0px 0px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+img.SeccionBebida{
+    border-radius: 20px 20px 0px 0px;
     max-width: 100%;
     height: auto;
 }

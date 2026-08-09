@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#003C66 ">
+    <meta name="theme-color" content="#003C66" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#003C66" media="(prefers-color-scheme: dark)">
     <title>El Parke Lounge Bar - Comida</title>
     <link rel="stylesheet" href="comidaES.css">
     <link rel="stylesheet" href="../global.css">
@@ -18,6 +19,14 @@
         <a href="../index.html">
             <img  class="Logo" src="../Recursos/Logo/IsoLogoWhiteBackgroundBlue.png" alt="Logotipo del comercio llamado El Parque lounch bar que se compone de un arbol y el nombre del local">
         </a>
+
+        <div class="SelectorIdioma">
+            <img class="IconoIdioma" src="../Recursos/Icons/LenguageBotton.png" alt="Icono para cambiar el idioma">
+            <select class="MenuIdioma" aria-label="Seleccionar idioma">
+                <option value="ES" selected>Español</option>
+                <option value="EN">English</option>
+            </select>
+        </div>
     </header>
 
     <nav class="navbar">
@@ -26,7 +35,7 @@
             <li><a href="#comida" class="Tab Activo">Comidas</a></li>
             <li><a href="tapeoES.html" class="Tab">Tapeo</a></li>
             <li><a href="dulceES.html" class="Tab">Dulces</a></li>
-            <li><a href="bebida.html" class="Tab">Bebidas</a></li>
+            <li><a href="bebidasES.html" class="Tab">Bebidas</a></li>
         </ul>
     </nav>
         
@@ -57,19 +66,40 @@
                         <span class="ItemNombre">Marinera</span>
                         <span class="ItemPrecio">2,50 €</span>
                     </div>
-                    <p class="ItemDescripcion">Ensaladilla sobre una rosquilla con una anchoa</p>
+                    <p class="ItemDescripcion">Ensaladilla rusa sobre una rosquilla con una anchoa</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Marinero</span>
-                        <span class="ItemPrecio">2,50 €</span>
+                        <span class="ItemPrecio">2,20 €</span>
                     </div>
-                    <p class="ItemDescripcion">Ensaladilla sobre una rosquilla con un boquerón</p>
+                    <p class="ItemDescripcion">Ensaladilla rusa sobre una rosquilla con un boquerón</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Bicicleta</span>
+                        <span class="ItemPrecio">2,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Ensaladilla rusa sobre una rosquilla</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Matrimonio</span>
+                        <span class="ItemPrecio">2,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Anchoa y boquerón con aceitunas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Ensaladilla rusa</span>
                         <span class="ItemPrecio">4,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Ración individual</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Ensaladilla marisco</span>
+                        <span class="ItemPrecio">5,00 €</span>
                     </div>
                     <p class="ItemDescripcion">Ración individual</p>
                 </li>
@@ -82,25 +112,134 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Patatas de bolsa</span>
-                        <span class="ItemPrecio">0,00 €</span>
+                        <span class="ItemNombre">Salchicha seca con parmesano</span>
+                        <span class="ItemPrecio">7,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Bolsa de patatas que puedes acompañar con limón y pimienta</p>
+                    <p class="ItemDescripcion">Preguntar disponivilidad</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Patatas de bolsa</span>
+                        <span class="ItemPrecio">1,45 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Bolsa de patatas fritas que puedes acompañar con limón y pimienta</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Aceitunas</span>
-                        <span class="ItemPrecio">0,00 €</span>
+                        <span class="ItemPrecio">2,50 €</span>
                     </div>
                     <p class="ItemDescripcion">Aceitunas clásicas rellenas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Aceitunas aliñadas</span>
-                        <span class="ItemPrecio">0,00 €</span>
+                        <span class="ItemPrecio">2,00 €</span>
                     </div>
                     <p class="ItemDescripcion">Aceitunas aliñadas con hueso</p>
                 </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Almendras</span>
+                        <span class="ItemPrecio">2,70 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Almendras tostadas con sal</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Frutos secos</span>
+                        <span class="ItemPrecio">1,70 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+
+                <p class="Nota2">OTROS</p>
+
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Huevo Kinder</span>
+                        <span class="ItemPrecio">1,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">PEZ</span>
+                        <span class="ItemPrecio">2,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Fosquitos</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Kinder Bueno</span>
+                        <span class="ItemPrecio">1,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">ChupaChups</span>
+                        <span class="ItemPrecio">0,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Hello Panda</span>
+                        <span class="ItemPrecio">1,30 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Gusanitos</span>
+                        <span class="ItemPrecio">0,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Rufles de Jamón</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">3D Fritos</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Chetos Fantasmikos</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Chetos pandilla</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Doritos</span>
+                        <span class="ItemPrecio">1,20 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+
             </ul>
         </details>
         </section>
@@ -156,10 +295,17 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Patatas bravas</span>
+                        <span class="ItemNombre">Ración de patatas bravas</span>
                         <span class="ItemPrecio">5,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Ración</p>
+                    <p class="ItemDescripcion">Una ración</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Media de patatas bravas</span>
+                        <span class="ItemPrecio">4,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Media ración</p>
                 </li>
 
                 <p class="Nota2">MÁS GRANDES</p>
@@ -173,6 +319,13 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
+                        <span class="ItemNombre">Ración de patatas fritas</span>
+                        <span class="ItemPrecio">3,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Ración individual</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
                         <span class="ItemNombre">Calamar a la andaluza</span>
                         <span class="ItemPrecio">11,00 €</span>
                     </div>
@@ -180,7 +333,7 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Calamar a la Romana · 🥚 · 🌾</span>
+                        <span class="ItemNombre">Calamar a la Romana</span>
                         <span class="ItemPrecio">5,00 €</span>
                     </div>
                     <p class="ItemDescripcion">Anillos de calamar rebozados</p>
@@ -199,13 +352,29 @@
                     </div>
                     <p class="ItemDescripcion">Patatas cocidas con ajo y un toque de piminta</p>
                 </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Docena de mejillones</span>
+                        <span class="ItemPrecio">4,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Mejillones al vapor</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Media docena de mejillones</span>
+                        <span class="ItemPrecio">8,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Mejillones al vapor</p>
+                </li>
             </ul>
         </details>
         </section>
 
         <section class="MenuMontaditos">
         <details class="Plegable">
-            <summary class="TituloPlegableSinNota">Montaditos</summary>
+            <summary class="TituloPlegable">Montaditos</summary>
+
+            <p class="Nota">EXTRA DE QUESO FRESCO, CURADO O BEACON + 0,50€</p>
 
             <ul class="ListaPlegada">
                 <li class="Item">
@@ -231,8 +400,22 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
+                        <span class="ItemNombre">Ternera</span>
+                        <span class="ItemPrecio">5,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Queso fresco</span>
+                        <span class="ItemPrecio">3,00 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Queso fresco con tomate</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
                         <span class="ItemNombre">Pechuga</span>
-                        <span class="ItemPrecio">3,50 €</span>
+                        <span class="ItemPrecio">3,70 €</span>
                     </div>
                     <p class="ItemDescripcion">Pechuga con tomate</p>
                 </li>
@@ -245,10 +428,17 @@
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
-                        <span class="ItemNombre">Salmón con philadelphia</span>
+                        <span class="ItemNombre">Salmón</span>
                         <span class="ItemPrecio">4,20 €</span>
                     </div>
                     <p class="ItemDescripcion">Salmón, philadelphia y eneldo</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Morcilla</span>
+                        <span class="ItemPrecio">2,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion"></p>
                 </li>
             </ul>
         </details>
@@ -259,7 +449,7 @@
             <summary class="TituloPlegable">COMIDA RÁPIDA</summary>
 
             <p class="Nota3">SOLO DISPONIBLE EN MESA AZUL</p>
-            <p class="Nota">EXTRAS: QUESO, BACON Y HUVO. 0,50€ CADA UNO</p>
+            <p class="Nota">EXTRAS: QUESO, BACON O HUVO. 0,50€ CADA UNO</p>
             <p class="Nota2">HAMBURGUESAS</p>
 
             <ul class="ListaPlegada">
@@ -268,7 +458,7 @@
                         <span class="ItemNombre">Mini</span>
                         <span class="ItemPrecio">5,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Carne de ternera y cerdo, lechuga y tomate</p>
+                    <p class="ItemDescripcion">Carne de ternera y cerdo, lechuga y tomate, acompañada de patatas fritas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
@@ -286,28 +476,28 @@
 >>>>>>> bcc4570594ded616d038dca578621f50cfac9f8f
                         <span class="ItemPrecio">6,50 €</span>
                     </div>
-                    <p class="ItemDescripcion">Carne de ternera, lechuga y tomate</p>
+                    <p class="ItemDescripcion">Carne de ternera, lechuga y tomate, acompañada de patatas fritas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Completa</span>
                         <span class="ItemPrecio">8,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Carne de ternera, bacon, queso, huevo lechuga y tomate</p>
+                    <p class="ItemDescripcion">Carne de ternera, bacon, queso, huevo lechuga y tomate, acompañada de patatas fritas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Mexicana</span>
                         <span class="ItemPrecio">7,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Pollo empanado relleno de queso y jalapeños, lechuga y tomate</p>
+                    <p class="ItemDescripcion">Pollo empanado relleno de queso y jalapeños, lechuga y tomate, acompañada de patatas fritas</p>
                 </li>
                 <li class="Item">
                     <div class="ItemInfo">
                         <span class="ItemNombre">Crispy</span>
                         <span class="ItemPrecio">7,00 €</span>
                     </div>
-                    <p class="ItemDescripcion">Carne de pollo empanada, lechuga y tomate</p>
+                    <p class="ItemDescripcion">Carne de pollo empanada, lechuga y tomate, acompañada de patatas fritas</p>
                 </li>
 
                 <p class="Nota2">PIZZAS</p>
@@ -387,7 +577,7 @@
             <summary class="TituloPlegable">SANDWICHES Y BOCADILLOS</summary>
 
             <p class="Nota3">SOLO DISPONIBLE EN MESA AZUL</p>
-            <p class="Nota">EXTRAS: BACON, QUESO Y HUEVO. 0,50€ CADA UNO</p>
+            <p class="Nota">EXTRAS: BACON, QUESO O HUEVO. 0,50€ CADA UNO</p>
             <p class="Nota2">SANDWICHES</p>
 
             <ul class="ListaPlegada">
@@ -404,6 +594,13 @@
                         <span class="ItemPrecio">4,50 €</span>
                     </div>
                     <p class="ItemDescripcion">Lechuga, tomate, atún, huevo cocido y esparragos</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Croissant vegetal</span>
+                        <span class="ItemPrecio">3,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Croissant con lechuga, tomate, atún y huevo cocido</p>
                 </li>
 
             <p class="Nota2">BOCADILLOS</p>
@@ -443,21 +640,42 @@
                     </div>
                     <p class="ItemDescripcion">Pechuga, tomate y lechuga</p>
                 </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Lomo</span>
+                        <span class="ItemPrecio">4,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Bocadillo de lomo, queso y tomate</p>
+                </li>
+                <li class="Item">
+                    <div class="ItemInfo">
+                        <span class="ItemNombre">Salchicha</span>
+                        <span class="ItemPrecio">4,50 €</span>
+                    </div>
+                    <p class="ItemDescripcion">Bocadillo de salchicha con tomate</p>
+                </li>
             </ul>
         </details>
         </section>
 
         <div class="Alergenos">
             <h2>Alergenos y otros</h2>
-            <article>
-                <p>Lácteo 🥛</p>
+            <article class="ListaAlergenos">
+                
                 <p>Gluten 🌾</p>
-                <p>Crustáceo 🍤</p>
-                <p>Huevo 🥚</p>
+                <p>Crustáceos 🦐</p>
+                <p>Huevos 🥚</p>
                 <p>Pescado 🐟</p>
-                <p>Cacahuete 🥜</p>
-                <p>Alcohol 🍷</p>
-                <p>picante 🌶</p>
+                <p>Cacahuetes 🥜</p>
+                <p>Soja 🌱</p>
+                <p>Leche 🥛</p>
+                <p>Frutos de cáscara 🌰</p>
+                <p>Apio 🥬</p>
+                <p>Mostaza 🌭</p>
+                <p>Sésamo ⚪</p>
+                <p>Altramuces 🌸</p>
+                <p>Moluscos 🐚</p>
+                <p>Alcohol 🍷</p>                
             </article>
         </div>
 
@@ -485,6 +703,7 @@ if (TabActivo) {
     TabActivo.scrollIntoView({ inline: 'center', block: 'nearest' });
 }
 </script>
+<script src="../idiomas.js"></script>
 
 </body>
 </html>

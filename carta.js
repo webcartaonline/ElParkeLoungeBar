@@ -209,6 +209,9 @@ function pintarAvisosSeccion(seccion) {
         <div class="${escapar(a.clase)}">
             <h3>${escapar(t(a.titulo))}</h3>
             <p>${escapar(t(a.texto))}</p>
+        </div>
+        <div>
+            <hr class="VacioPequeño">
         </div>`).join('');
 }
 

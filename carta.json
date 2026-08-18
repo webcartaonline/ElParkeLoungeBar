@@ -647,6 +647,49 @@
           ]
         },
         {
+          "id": "g-desayuno-churros",
+          "clase": "MenuChurros",
+          "nombre": {
+            "es": "Churros y chocolate",
+            "en": "Churros and chocolate"
+          },
+          "avisos": [],
+          "bloques": [
+            {
+              "titulo": null,
+              "listaAparte": false,
+              "items": [
+                {
+                  "id": "i-churros",
+                  "nombre": {
+                    "es": "Churros",
+                    "en": "Churros"
+                  },
+                  "descripcion": {
+                    "es": "4 unidades de lazos",
+                    "en": "4 pieces"
+                  },
+                  "precio": 1.5,
+                  "alergenos": []
+                },
+                {
+                  "id": "i-chocolate",
+                  "nombre": {
+                    "es": "Chocolate",
+                    "en": "Hot chocolate"
+                  },
+                  "descripcion": {
+                    "es": "Taza de chocolate caliente",
+                    "en": "Cup of hot chocolate"
+                  },
+                  "precio": 1.5,
+                  "alergenos": []
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "g-desayuno-zumos",
           "clase": "MenuZumos",
           "nombre": {
@@ -902,10 +945,10 @@
         "en": "Coffee and more"
       },
       "imagen": {
-        "src": "Recursos/Tapeo/MarineraAndCaña.png",
+        "src": "Recursos/Cafe/CofeeAndTea.jpg",
         "alt": {
-          "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen una marinera y una caña",
-          "en": "White background image with a 3D illustration showing a marinera and a caña beer"
+          "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen un café y una infusión",
+          "en": "White background image with a 3D illustration showing a cofee and tea"
         },
         "clasePortada": "ImagenPortada",
         "claseInicio": ""
@@ -2878,7 +2921,7 @@
         "en": "Afternoon treats"
       },
       "imagen": {
-        "src": "Recursos/Dulces/GranizadoCopaHelado.png",
+        "src": "Recursos/Dulces/GranizadoCopaHelado.jpg",
         "alt": {
           "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen un granizado y una copa de elado con tres bolas de diferente sabor",
           "en": "White background image with a 3D illustration showing a slushie and an ice cream sundae with three different flavour scoops"
@@ -3041,6 +3084,49 @@
                     "en": "Chocolate coulant with ice cream · Gluten-free"
                   },
                   "precio": 5,
+                  "alergenos": []
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "g-desayuno-churros",
+          "clase": "MenuChurros",
+          "nombre": {
+            "es": "Churros y chocolate",
+            "en": "Churros and chocolate"
+          },
+          "avisos": [],
+          "bloques": [
+            {
+              "titulo": null,
+              "listaAparte": false,
+              "items": [
+                {
+                  "id": "i-churros",
+                  "nombre": {
+                    "es": "Churros",
+                    "en": "Churros"
+                  },
+                  "descripcion": {
+                    "es": "4 unidades de lazos",
+                    "en": "4 pieces"
+                  },
+                  "precio": 1.5,
+                  "alergenos": []
+                },
+                {
+                  "id": "i-chocolate",
+                  "nombre": {
+                    "es": "Chocolate",
+                    "en": "Hot chocolate"
+                  },
+                  "descripcion": {
+                    "es": "Taza de chocolate caliente",
+                    "en": "Cup of hot chocolate"
+                  },
+                  "precio": 1.5,
                   "alergenos": []
                 }
               ]

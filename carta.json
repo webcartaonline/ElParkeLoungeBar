@@ -941,14 +941,14 @@
         "en": "Coffee and more"
       },
       "titulo": {
-        "es": "Cafés y otros",
+        "es": "Café y otros",
         "en": "Coffee and more"
       },
       "imagen": {
         "src": "Recursos/Cafe/CofeeAndTea.jpg",
         "alt": {
           "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen un café y una infusión",
-          "en": "White background image with a 3D illustration showing a cofee and tea"
+          "en": "White background image with a 3D illustration showing a coffee and a herbal tea"
         },
         "clasePortada": "ImagenPortada",
         "claseInicio": ""
@@ -1715,7 +1715,7 @@
           },
           "texto": {
             "es": "Zona blanca y azul",
-            "en": "white and blue zone"
+            "en": "White and blue zone"
           }
         }
       ],
@@ -2078,7 +2078,7 @@
           "clase": "AvisoIzquierda",
           "titulo": {
             "es": "SOLO DISPONIBLE EN ZONA AZUL",
-            "en": "ONLY AVAILABLE AT BLUE ZONBE"
+            "en": "ONLY AVAILABLE AT BLUE ZONE"
           },
           "texto": {
             "es": "",
@@ -2108,7 +2108,7 @@
           "avisos": [
             {
               "es": "SOLO DISPONIBLE EN ZONA AZUL",
-              "en": "ONLY AVAILABLE AT BLUE ZONBE"
+              "en": "ONLY AVAILABLE AT BLUE ZONE"
             }
           ],
           "bloques": [
@@ -2334,7 +2334,7 @@
           "avisos": [
             {
               "es": "SOLO DISPONIBLE EN ZONA AZUL",
-              "en": "ONLY AVAILABLE AT BLUE ZONBE"
+              "en": "ONLY AVAILABLE AT BLUE ZONE"
             },
             {
               "es": "EXTRA DE QUESO FRESCO, CURADO O BEACON + 0,50€",
@@ -2451,7 +2451,7 @@
           "avisos": [
             {
               "es": "SOLO DISPONIBLE EN ZONA AZUL",
-              "en": "ONLY AVAILABLE AT BLUE ZONBE"
+              "en": "ONLY AVAILABLE AT BLUE ZONE"
             },
             {
               "es": "EXTRAS: QUESO, BACON O HUEVO. 0,50€ CADA UNO",
@@ -2622,7 +2622,7 @@
                   "id": "i-diavola",
                   "nombre": {
                     "es": "Díavola",
-                    "en": "Dívola"
+                    "en": "Díavola"
                   },
                   "descripcion": {
                     "es": "Tomate, mozarella y peperoni",
@@ -2680,7 +2680,7 @@
           "avisos": [
             {
               "es": "SOLO DISPONIBLE EN ZONA AZUL",
-              "en": "ONLY AVAILABLE AT BLUE ZONBE"
+              "en": "ONLY AVAILABLE AT BLUE ZONE"
             },
             {
               "es": "EXTRAS: BACON, QUESO O HUEVO. 0,50€ CADA UNO",
@@ -2848,7 +2848,7 @@
           "avisos": [
             {
               "es": "SOLO DISPONIBLE EN ZONA AZUL",
-              "en": "ONLY AVAILABLE AT BLUE ZONBE"
+              "en": "ONLY AVAILABLE AT BLUE ZONE"
             },
             {
               "es": "EXTRAS: BACON, QUESO O HUEVO. 0,50€ CADA UNO",
@@ -2932,8 +2932,8 @@
       "inicio": {
         "clase": "ButtonDulceInicio",
         "texto": {
-          "es": "merendar",
-          "en": "Snack"
+          "es": "Merendar",
+          "en": "Afternoon snack"
         },
         "alerta": null
       },
@@ -3091,7 +3091,7 @@
           ]
         },
         {
-          "id": "g-desayuno-churros",
+          "id": "g-dulce-churros-y-chocolate",
           "clase": "MenuChurros",
           "nombre": {
             "es": "Churros y chocolate",
@@ -3104,7 +3104,7 @@
               "listaAparte": false,
               "items": [
                 {
-                  "id": "i-churros",
+                  "id": "i-churros-2",
                   "nombre": {
                     "es": "Churros",
                     "en": "Churros"
@@ -3117,7 +3117,7 @@
                   "alergenos": []
                 },
                 {
-                  "id": "i-chocolate",
+                  "id": "i-chocolate-2",
                   "nombre": {
                     "es": "Chocolate",
                     "en": "Hot chocolate"
@@ -3382,7 +3382,7 @@
                   },
                   "descripcion": {
                     "es": "Elige entre: Limón, café, leche preparada, melón, fresa, tropical, coco, horchata chufa de almendra y mango",
-                    "en": "Choose from: lemon, coffee, leche preparada, melon, strawberry, tropical, coconut, tiger nut-almond horchata and mango"
+                    "en": "Choose from: lemon, coffee, leche preparada (sweet milk drink), melon, strawberry, tropical, coconut, tiger nut-almond horchata and mango"
                   },
                   "precio": 2.3,
                   "alergenos": []
@@ -3584,8 +3584,8 @@
       "imagen": {
         "src": "Recursos/Bebidas/PortadaBebidas.png",
         "alt": {
-          "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen una hamburguesa y un bocadillo",
-          "en": "White background image with a 3D illustration showing a burger and a baguette sandwich"
+          "es": "Imagen de fondo blanco con una ilustración en 3D que muestra en el centro de la imágen una botella de agua y una botella de vino",
+          "en": "White background image with a 3D illustration showing a bottle of water and a bottle of wine"
         },
         "clasePortada": "ImagenPortada",
         "claseInicio": "SeccionBebida"

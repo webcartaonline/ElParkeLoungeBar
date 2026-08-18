@@ -32,6 +32,18 @@ body{
 
     padding: 0px;
     margin: 0px;
+
+    /* La página ocupa como mínimo la pantalla entera y se organiza en
+       columna: cabecera, barra de secciones y, debajo, el contenido.
+       Así main puede estirarse para que el fondo claro llegue siempre
+       al borde inferior, aunque haya pocos grupos.
+       100dvh descuenta la barra del navegador en el móvil; la línea de
+       arriba queda como respaldo para navegadores que no la entienden. */
+    min-height: 100vh;
+    min-height: 100dvh;
+
+    display: flex;
+    flex-direction: column;
 }
 
 header{
@@ -56,6 +68,11 @@ main{
     background-color: #dfdfdf;
     margin-top: 10px;
     border-radius: 22px;
+
+    /* Crece hasta llenar lo que sobre de pantalla, pero nunca se encoge:
+       si hay más grupos de los que caben, main conserva su altura real y
+       la página se desplaza hacia abajo con normalidad. */
+    flex: 1 0 auto;
 }
 
 body.Portada main{ padding: 20px 20px; }

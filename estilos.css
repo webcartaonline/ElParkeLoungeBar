@@ -1,3 +1,28 @@
+/* =========================================================
+   El Parke Lounge Bar — hoja de estilos única
+   ---------------------------------------------------------
+   Reúne lo que antes estaba repartido en index.css (la portada),
+   global.css (las secciones) y las hojas sueltas de cada sección
+   (desayunoES.css, comidaES.css, tapeoES.css…).
+
+   Como ahora todo vive en una sola página, hay reglas de la
+   portada y de las secciones que se pisarían entre ellas (el
+   tamaño del logo, el redondeo de la cabecera, los <a>, los <p>…).
+   Por eso cada bloque va colgado de la clase que carta.js pone en
+   el <body> según lo que esté mostrando:
+
+       <body class="Portada">   -> pantalla de inicio
+       <body class="Seccion">   -> una sección de la carta
+
+   El aspecto es exactamente el mismo que antes; solo cambia de
+   dónde cuelga cada regla.
+   ========================================================= */
+
+
+/* =========================================================
+   1. Común a las dos vistas
+   ========================================================= */
+
 body{
     background-color: black;
 
@@ -11,19 +36,30 @@ body{
 
 header{
     background-color: #003C66;
-    margin: 0px; /*10px 10px 0px 10px*/
+    margin: 0px;
     padding: 30px;
-    border-radius: 0px; /*22px 22px 0px 0px*/
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-img.Logo{
-    max-width: 55%;
-    height: auto;
+/* La cabecera de la portada va redondeada por abajo; la de las
+   secciones no, porque debajo lleva pegada la barra de pestañas */
+body.Portada header{ border-radius: 0px 0px 22px 22px; }
+body.Seccion header{ border-radius: 0px; }
+
+body.Portada img.Logo{ max-width: 48%; height: auto; }
+body.Seccion img.Logo{ max-width: 55%; height: auto; }
+
+main{
+    background-color: #dfdfdf;
+    margin-top: 10px;
+    border-radius: 22px;
 }
+
+body.Portada main{ padding: 20px 20px; }
+body.Seccion main{ padding: 0px 0px 5px 0px; }
 
 /* --------- Selector de idioma --------- */
 
@@ -57,14 +93,89 @@ select.MenuIdioma{
     appearance: none;
 }
 
-.navbar{
+
+/* =========================================================
+   2. Portada  (antes index.css)
+   ========================================================= */
+
+body.Portada h1.Welcome{
+    color: #003C66;
+    font-weight: 900;
+
+    text-align: center;
+}
+
+body.Portada h3.QueApetece{
+    color: #006BB8;
+    font-weight: 300;
+
+    text-align: center;
+}
+
+body.Portada a{
+    background-color: #00CA7D;
+    border-radius: 20px;
+    border: none;
+    margin: 50px 0px 50px 0px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    text-decoration: none;
+    color: inherit;
+}
+
+body.Portada img{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+body.Portada img.SeccionComida{
+    border-radius: 0px 0px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+body.Portada img.SeccionBebida{
+    border-radius: 20px 20px 0px 0px;
+    max-width: 100%;
+    height: auto;
+}
+
+body.Portada p{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+body.Portada p.AlertaInicio{
+    background-color: #FF6F00;
+    color: black;
+    margin: 0px -16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* =========================================================
+   3. Secciones  (antes global.css)
+   ========================================================= */
+
+body.Seccion .navbar{
     background-color: #1565c0;
     border-radius: 0px 0px 22px 22px;
     padding: 0px 0px 0px 0px;
-    margin: 0px; /*0px 10px 0px 10px*/
+    margin: 0px;
 }
 
-.menu{
+body.Seccion .menu{
     display: flex;
     margin: 0;
     padding: 0px 15px 5px 15px;
@@ -78,14 +189,7 @@ select.MenuIdioma{
     /* si algún día añades más secciones y no caben, esto permite deslizar con el dedo */
 }
 
-main{
-    background-color: #dfdfdf;
-    padding: 0px 0px 5px 0px;
-    margin-top: 10px;
-    border-radius: 22px;
-}
-
-.Tab{
+body.Seccion .Tab{
     position: relative;
     padding: 0.9rem 0.5rem 0.6rem;
 
@@ -100,7 +204,7 @@ main{
 }
 
 /* La sección activa: negrita, un poco más grande y color blanco */
-.Tab.Activo{
+body.Seccion .Tab.Activo{
     color: #fff;
 
     font-size: 1.1rem;
@@ -109,7 +213,7 @@ main{
 }
 
 /* La rayita blanca redondeada encima de la pestaña activa */
-.Tab.Activo::before{
+body.Seccion .Tab.Activo::before{
     content: "";
     position: absolute;
     top: 0;
@@ -121,24 +225,33 @@ main{
     border-radius: 10px;
 }
 
-div.PortadaSeccion{
+body.Seccion div.PortadaSeccion{
     background-color: white;
     border-radius: 22px;
     position: relative; /* referencia para el texto */
     width: 100%;
 }
 
-img.ImagenPortada{
+body.Seccion img.ImagenPortada{
     border-radius: 22px;
     width: 100%;
     height: 120px; /* altura pensada para móvil */
     object-fit: cover; /* la imagen no se deforma */
     object-position: -8%;
     display: block;
-    
 }
 
-.PortadaSeccion h1{
+/* La ilustración de Comidas se encuadra desde el borde izquierdo */
+body.Seccion img.ImagenPortadaComida{
+    border-radius: 22px;
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    object-position: 0%;
+    display: block;
+}
+
+body.Seccion .PortadaSeccion h1{
     position: absolute;
     left: 100px;
     transform: translate(-50%, 50%); /* centrado perfecto */
@@ -148,27 +261,70 @@ img.ImagenPortada{
     width: 90%; /* que no toque los bordes en pantallas pequeñas */
 }
 
-hr.VacioPequeño{
+body.Seccion hr.VacioPequeño{
     border: none;
     height: 10px;
 }
 
+/* --------- Avisos bajo la portada de la sección ---------
+   Cuatro nombres para dos aspectos: barra naranja a la izquierda
+   o a la derecha. Venían de las hojas sueltas de cada sección. */
+
+body.Seccion div.AvisoIzquierda,
+body.Seccion div.TipoPan{
+    border-left: 3px solid #FF6F00;
+    margin-top: 30px;
+    margin-left: 15px;
+    padding: 0px 0px 0px 15px;
+    margin-bottom: 25px;
+}
+
+body.Seccion div.AvisoIzquierda h3,
+body.Seccion div.TipoPan h3{
+    color: #FF6F00;
+}
+
+body.Seccion div.AvisoIzquierda p,
+body.Seccion div.TipoPan p{
+    margin-top: -15px;
+}
+
+body.Seccion div.AvisoDerecha,
+body.Seccion div.TipoLeche{
+    border-right: 3px solid #FF6F00;
+    margin-right: 15px;
+    padding: 0px 15px 0px 0px;
+}
+
+body.Seccion .AvisoDerecha h3,
+body.Seccion .TipoLeche h3{
+    color: #FF6F00;
+
+    text-align: right;
+}
+
+body.Seccion .AvisoDerecha p,
+body.Seccion .TipoLeche p{
+    margin-top: -15px;
+
+    text-align: right;
+}
+
 /*MENU PLEGABLE*/
 
-section{
+body.Seccion section{
     margin: 20px 20px 0px 20px;
     max-width: 100%;
     padding-bottom: 20px;
 }
 
-.Plegable{
+body.Seccion .Plegable{
     border-radius: 22px;
     overflow: hidden;
-
 }
 
 /* Barra de título: abre y cierra toda la lista */
-.TituloPlegable{
+body.Seccion .TituloPlegable{
     background-color: #00CA7D;
     color: #fff;
     font-size: 1rem;
@@ -185,22 +341,22 @@ section{
 }
 
 /* Quita la flecha por defecto en WebKit */
-.TituloPlegable::-webkit-details-marker{
+body.Seccion .TituloPlegable::-webkit-details-marker{
     display: none;
 }
 
 /* Flecha propia que gira al abrir */
-.TituloPlegable::after{
+body.Seccion .TituloPlegable::after{
     content: "▾";
     font-size: 1.8rem;
     transition: transform 0.25s ease;
 }
 
-.Plegable[open] .TituloPlegable::after{
+body.Seccion .Plegable[open] .TituloPlegable::after{
     transform: rotate(180deg);
 }
 
-.TituloPlegableSinNota{
+body.Seccion .TituloPlegableSinNota{
     background-color: #00CA7D;
     color: #fff;
     border-radius: 22px;
@@ -218,23 +374,23 @@ section{
 }
 
 /* Quita la flecha por defecto en WebKit */
-.TituloPlegableSinNota::-webkit-details-marker{
+body.Seccion .TituloPlegableSinNota::-webkit-details-marker{
     display: none;
 }
 
 /* Flecha propia que gira al abrir */
-.TituloPlegableSinNota::after{
+body.Seccion .TituloPlegableSinNota::after{
     content: "▾";
     font-size: 1.8rem;
     transition: transform 0.25s ease;
 }
 
-.Plegable[open] .TituloPlegableSinNota::after{
+body.Seccion .Plegable[open] .TituloPlegableSinNota::after{
     transform: rotate(180deg);
 }
 
 /* Nota del suplemento */
-.Nota{
+body.Seccion .Nota{
     background-color: #FF6F00;
     margin-top: 0px;
     text-align: center;
@@ -244,7 +400,7 @@ section{
     padding: 15px 0px 15px 10px;
 }
 
-.NotaAzul{
+body.Seccion .NotaAzul{
     background-color: #006BB8;
     margin-top: 0px;
     text-align: center;
@@ -254,7 +410,7 @@ section{
     padding: 15px 0px 15px 10px;
 }
 
-.Nota2{
+body.Seccion .Nota2{
     background-color: #006BB8 ;
     margin-top: 15px;
     text-align: center;
@@ -264,7 +420,7 @@ section{
     padding: 15px 0px 15px 10px;
 }
 
-.Nota3{
+body.Seccion .Nota3{
     background-color: #FF6F00;
     margin: 0px;
     text-align: center;
@@ -274,15 +430,15 @@ section{
     padding: 15px 0px 15px 10px;
 }
 
-/* --------- Lista de tostadas --------- */
+/* --------- Lista de productos --------- */
 
-.ListaPlegada{
+body.Seccion .ListaPlegada{
     margin-left: -40px;
     list-style: none;
     background-color: #a14f4f00;
 }
 
-li.Item{
+body.Seccion li.Item{
     background-color: #fff;
     padding: 18px 20px 5px 20px;
     margin-top: 5px;
@@ -292,7 +448,7 @@ li.Item{
 
 /* Nombre a la izquierda, precio a la derecha */
 
-.ItemInfo{
+body.Seccion .ItemInfo{
     border-bottom: none;
     display: flex;
     justify-content: space-between;
@@ -300,12 +456,12 @@ li.Item{
     gap: 0.75rem;
 }
 
-.ItemNombre{
+body.Seccion .ItemNombre{
     font-weight: 700;
     color: #003C66;
     font-size: 1rem;
 }
-.ItemPrecio{
+body.Seccion .ItemPrecio{
     font-weight: 700;
     color: #FF6F00;
     font-size: 1rem;
@@ -314,7 +470,7 @@ li.Item{
 
 
 /* Descripción sutil bajo el nombre */
-.ItemDescripcion{
+body.Seccion .ItemDescripcion{
     font-size: 0.82rem;
     color: #8a8a8a;
     margin-top: 0.2rem;
@@ -324,13 +480,13 @@ li.Item{
 /* --------- Pantallas más grandes (progresivo) --------- */
 
 @media (min-width: 600px) {
-    section{
+    body.Seccion section{
         max-width: 560px;
         margin: 0 auto;
     }
 }
 
-div.Alergenos{
+body.Seccion div.Alergenos{
     background-color: white;
     padding: 20px 30px 20px 30px;
     margin: 50px 0px -5px 0px;
@@ -339,13 +495,13 @@ div.Alergenos{
     align-items: center;
 }
 
-.Alergenos h2{
+body.Seccion .Alergenos h2{
     color: #FF6F00;
     margin-bottom: 30px;
     text-align: center;
 }
 
-.ListaAlergenos{
+body.Seccion .ListaAlergenos{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -355,8 +511,37 @@ div.Alergenos{
     font-size: 0.8rem;
 }
 
-.ListaAlergenos p{
+body.Seccion .ListaAlergenos p{
     background-color: #ebebeb;
     border-radius: 20px;
     padding: 10px;
+}
+
+/* --------- Alérgenos por producto ---------
+   PREPARADO PERO SIN USAR. Estas reglas solo entran en juego
+   cuando un producto declara alérgenos en carta.json:
+
+       "alergenos": ["gluten", "lacteos"]
+
+   Mientras las listas estén vacías, carta.js no genera estos
+   elementos y la carta se ve exactamente igual que siempre. */
+
+body.Seccion .ItemAlergenos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+}
+
+body.Seccion .ItemAlergeno{
+    background-color: #ebebeb;
+    color: #6b6b6b;
+    border-radius: 20px;
+    padding: 4px 10px;
+
+    font-size: 0.72rem;
+    line-height: 1.2;
+    white-space: nowrap;
 }

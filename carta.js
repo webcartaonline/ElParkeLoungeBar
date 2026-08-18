@@ -57,21 +57,21 @@ const UI = {
        "alergenos": ["gluten", "lacteos"]
    No hay que tocar este archivo. */
 const ALERGENOS = {
-  'gluten':       { es: 'Gluten',            en: 'Gluten',            icono: '🌾' },
-  'crustaceos':   { es: 'Crustáceos',        en: 'Crustaceans',       icono: '🦐' },
-  'huevos':       { es: 'Huevos',            en: 'Eggs',              icono: '🥚' },
-  'pescado':      { es: 'Pescado',           en: 'Fish',              icono: '🐟' },
-  'cacahuetes':   { es: 'Cacahuetes',        en: 'Peanuts',           icono: '🥜' },
-  'soja':         { es: 'Soja',              en: 'Soya',              icono: '🌱' },
-  'lacteos':      { es: 'Leche',             en: 'Milk',              icono: '🥛' },
-  'frutos-secos': { es: 'Frutos de cáscara', en: 'Tree nuts',         icono: '🌰' },
-  'apio':         { es: 'Apio',              en: 'Celery',            icono: '🥬' },
-  'mostaza':      { es: 'Mostaza',           en: 'Mustard',           icono: '🌭' },
-  'sesamo':       { es: 'Sésamo',            en: 'Sesame',            icono: '⚪' },
-  'sulfitos':     { es: 'Sulfitos',          en: 'Sulphites',         icono: '🍇' },
-  'altramuces':   { es: 'Altramuces',        en: 'Lupin',             icono: '🌸' },
-  'moluscos':     { es: 'Moluscos',          en: 'Molluscs',          icono: '🐚' },
-  'alcohol':      { es: 'Alcohol',           en: 'Alcohol',           icono: '🍷' }
+  'gluten': { es: 'Gluten', en: 'Gluten', icono: '🌾' },
+  'crustaceos': { es: 'Crustáceos', en: 'Crustaceans', icono: '🦐' },
+  'huevos': { es: 'Huevos', en: 'Eggs', icono: '🥚' },
+  'pescado': { es: 'Pescado', en: 'Fish', icono: '🐟' },
+  'cacahuetes': { es: 'Cacahuetes', en: 'Peanuts', icono: '🥜' },
+  'soja': { es: 'Soja', en: 'Soya', icono: '🌱' },
+  'lacteos': { es: 'Leche', en: 'Milk', icono: '🥛' },
+  'frutos-secos': { es: 'Frutos de cáscara', en: 'Tree nuts', icono: '🌰' },
+  'apio': { es: 'Apio', en: 'Celery', icono: '🥬' },
+  'mostaza': { es: 'Mostaza', en: 'Mustard', icono: '🌭' },
+  'sesamo': { es: 'Sésamo', en: 'Sesame', icono: '⚪' },
+  'sulfitos': { es: 'Sulfitos', en: 'Sulphites', icono: '🍇' },
+  'altramuces': { es: 'Altramuces', en: 'Lupin', icono: '🌸' },
+  'moluscos': { es: 'Moluscos', en: 'Molluscs', icono: '🐚' },
+  'alcohol': { es: 'Alcohol', en: 'Alcohol', icono: '🍷' }
 };
 
 /* ---------- Estado ---------- */
@@ -362,7 +362,7 @@ function leerDireccion() {
 
 function idiomaPorDefecto() {
   let guardado = null;
-  try { guardado = localStorage.getItem(CLAVE_IDIOMA); } catch {}
+  try { guardado = localStorage.getItem(CLAVE_IDIOMA); } catch { }
   if (app.datos.negocio.idiomas.includes(guardado)) return guardado;
   return (navigator.language || '').toLowerCase().startsWith('en') ? 'en' : 'es';
 }
@@ -379,7 +379,7 @@ function pintar() {
   app.idioma = idioma;
   app.seccion = seccion;
   document.documentElement.lang = idioma;
-  try { localStorage.setItem(CLAVE_IDIOMA, idioma); } catch {}
+  try { localStorage.setItem(CLAVE_IDIOMA, idioma); } catch { }
 
   if (seccion) pintarSeccion(seccion);
   else pintarPortada();

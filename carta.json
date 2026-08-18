@@ -2932,8 +2932,8 @@
       "inicio": {
         "clase": "ButtonDulceInicio",
         "texto": {
-          "es": "Algo dulce",
-          "en": "Something sweet"
+          "es": "merendar",
+          "en": "Snack"
         },
         "alerta": null
       },
